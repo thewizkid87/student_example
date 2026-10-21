@@ -1,0 +1,74 @@
+activities:
+  - id: explain-tool-map
+    title: Explain the tool map
+    objective: tool-map
+    instructions: >
+      Explain Git, GitHub, Markdown, VS Code, terminal, and the student's selected AI CLI.
+      Ask the learner to explain the difference between a local Git commit and a GitHub push.
+    verification:
+      type: comprehension
+      question: What is the difference between a local Git commit and a GitHub push?
+    hints:
+      - Ask where the history lives before and after a push.
+      - A commit records a snapshot locally; a push sends commits to a remote host.
+  - id: verify-git
+    title: Check Git installation
+    objective: setup
+    instructions: >
+      Explain why Git is needed. Invite the learner to run git --version, then verify it.
+      Use the Git setup guide if installation or identity needs attention.
+    verification:
+      type: command
+      command_id: git-version
+    hints:
+      - Ask what command might print a tool's version.
+      - Try git --version in the terminal.
+  - id: confirm-cli-and-access
+    title: Confirm course and AI CLI access
+    objective: setup
+    instructions: >
+      Ask the learner to confirm they can access the course template, their own copied repository,
+      and one signed-in AI CLI. Use the relevant setup guide. Never request credentials in chat.
+    verification:
+      type: student_confirmation
+    hints:
+      - Check that the GitHub copy is under your account and your AI CLI opens in this folder.
+  - id: create-repo-tour
+    title: Create a repository tour
+    objective: first-file
+    instructions: >
+      Read Files/repo-tour-prompt.md with the learner. Ask them to create repo-tour.md
+      in their student copy, describing Lesson, Homework, Enrichment, and Files folders.
+      Inspect the file and ask what Markdown heading they used.
+    verification:
+      type: file_exists
+      path: repo-tour.md
+    hints:
+      - Look at the four folders in 01-tools-and-environment.
+      - Start repo-tour.md with a # heading, then a short section for each folder.
+  - id: commit-repo-tour
+    title: Commit the repository tour
+    objective: first-file
+    instructions: >
+      Explain staging and committing, then ask the learner to commit their repo-tour.md.
+      Verify a new commit since lesson start containing that file. Ask them to push and
+      confirm the file is visible on GitHub; never push for them.
+    verification:
+      type: git_history
+      minimum_commits: 1
+      path: repo-tour.md
+    hints:
+      - Use git status to see which file changed.
+      - Stage repo-tour.md, then create a commit with a meaningful message.
+  - id: explain-homework
+    title: Explain the homework workflow
+    objective: homework-workflow
+    instructions: >
+      Open Homework/project.md. Ask the learner to identify the required file,
+      acceptance criteria, and how they will confirm it is visible on GitHub.
+      Do not write about-me.md for them. Remind them to review personal details before a public push.
+    verification:
+      type: comprehension
+      question: What will you submit for Week 1 and how will you confirm the submission?
+    hints:
+      - Look at the What, Acceptance Criteria, and Submission sections.

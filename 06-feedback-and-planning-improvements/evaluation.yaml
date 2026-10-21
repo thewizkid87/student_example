@@ -1,0 +1,28 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: feedback
+  description: Record feedback or state when outside feedback was unavailable; avoid
+    publishing personal contact data.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: triage
+  description: Distinguish bugs, feature requests, accepted work, deferred work, and
+    open questions.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: improvement-plan
+  description: Write small Week 7 improvement tasks with verification and done criteria.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: revision
+  description: Show at least one revision after critique.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

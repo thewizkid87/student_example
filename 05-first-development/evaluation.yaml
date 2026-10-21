@@ -1,0 +1,28 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: runnable-mvp
+  description: Provide the chosen project source and a documented way to run it locally.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: mvp-scope
+  description: Implement the selected MVP features from the final tasks and HLD.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: observed-behavior
+  description: Provide observed app behavior and any relevant tests; do not infer
+    runtime success from files alone.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: workflow
+  description: Use meaningful commits and describe debugging or task-by-task development
+    evidence where available.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

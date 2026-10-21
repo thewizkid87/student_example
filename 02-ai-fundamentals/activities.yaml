@@ -1,0 +1,68 @@
+activities:
+  - id: explain-llm
+    title: Explain a language model
+    objective: model-basics
+    instructions: >
+      Use Files/llm-vocabulary-cheatsheet.md to explain prompts, tokens, and prediction.
+      Ask the learner to describe what a model can do and why fluent prose does not prove truth.
+    verification:
+      type: comprehension
+      question: Why can a language model sound confident and still be wrong?
+    hints:
+      - Ask whether predicting likely text is the same as checking a source.
+      - A plausible sentence can be generated without evidence for its claim.
+  - id: identify-uncertainty
+    title: Find missing evidence and context
+    objective: critical-use
+    instructions: >
+      Use Files/hallucination-checklist.md and Files/context-window-cheatsheet.md.
+      Give a claim with missing evidence and ask the learner how to test it; explain
+      that absent or excessive context can make an answer unreliable.
+    verification:
+      type: comprehension
+      question: How would you check a confident claim when the source or context is missing?
+    hints:
+      - Ask what evidence would support the claim.
+      - Check a primary source, a calculation, or the relevant repository file.
+  - id: challenge-answer
+    title: Challenge one AI answer
+    objective: challenge
+    instructions: >
+      Read Files/ai-challenge-prompt.md. Ask the learner to choose a question,
+      challenge the answer, request another explanation, and describe what changed.
+      Do not pretend a hallucination occurred if the answer remained grounded.
+    verification:
+      type: comprehension
+      question: What changed after your challenge, and how did you check the answer?
+    hints:
+      - Ask about assumptions, uncertainty, or a different explanation.
+      - Compare the answer with a source or a calculation.
+  - id: review-challenge-notes
+    title: Review in-class challenge notes
+    objective: challenge
+    instructions: >
+      Have the learner create ai-challenge-notes.md in the student repository.
+      Review the actual file, including the original question, challenge, changed
+      response, and validation. Mark complete only after a specific AI assessment.
+    verification:
+      type: artifact_review
+      path: ai-challenge-notes.md
+      rubric:
+        - Records the original question and challenged response
+        - Explains what changed or remained grounded
+        - Describes how the answer was checked
+    hints:
+      - Start with the question and first answer, then add the challenge.
+      - Record what you checked rather than declaring an answer correct by tone.
+  - id: plan-observations-homework
+    title: Plan the observations homework
+    objective: homework
+    instructions: >
+      Read Homework/project.md. Ask the learner to explain the two required examples,
+      validation, strengths and weaknesses, and commit/push submission. If no false
+      claim occurs naturally, use a verifiable unsupported claim and label it honestly.
+    verification:
+      type: comprehension
+      question: What evidence will each homework example include, and how will you submit it?
+    hints:
+      - Each example needs a question, answer, challenge, and independent check.

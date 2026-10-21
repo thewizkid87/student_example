@@ -1,0 +1,17 @@
+id: week-06
+title: Feedback and Planning Improvements
+duration_minutes: 120
+prerequisites: [week-05]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+homework_artifacts: [feedback-plan.md, 'idea-*-improvement-tasks.md']
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: feedback
+    description: Observe a realistic user attempt and capture anonymous feedback
+  - id: decisions
+    description: Categorize and prioritize feedback against the MVP goal
+  - id: plan
+    description: Write an improvement plan and actionable tasks

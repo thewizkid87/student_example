@@ -1,0 +1,24 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: three-ideas
+  description: Describe three distinct ideas with user, problem, solution, and risks.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: chosen-mvp
+  description: Choose one idea and scope a feasible MVP and later features with a
+    justified stack.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: tasks
+  description: Write implementable tasks for the chosen idea, starting with its app
+    skeleton.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

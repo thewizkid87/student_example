@@ -1,0 +1,28 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: improvements
+  description: Implement selected improvement tasks and mark only verified items complete.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: documentation
+  description: Update README run instructions and release notes.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: running-app
+  description: Provide observed local app behavior and verification evidence; do not
+    infer success from source alone.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: deployment-prep
+  description: Explain Netlify account and dashboard readiness only if student evidence
+    supports it; do not claim deployment.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

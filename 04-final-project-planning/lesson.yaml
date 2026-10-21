@@ -1,0 +1,17 @@
+id: week-04
+title: Final Project Planning
+duration_minutes: 120
+prerequisites: [week-03]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+homework_artifacts: [project-hld.md, 'idea-*-tasks-final.md']
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: validate
+    description: Validate the selected Week 3 project and trim scope if needed
+  - id: architecture
+    description: Create a buildable high-level design
+  - id: final-tasks
+    description: Derive final implementation tasks from the design

@@ -1,0 +1,57 @@
+activities:
+  - id: choose-first-task
+    title: Choose the first build task
+    objective: prepare
+    instructions: >
+      Read project-hld.md and the selected <idea>-tasks-final.md with the learner.
+      Confirm the actual project folder, stack, and Week 8 deployment path.
+      Pick the skeleton task and one small visible feature. The learner chooses;
+      do not impose a framework.
+    verification:
+      type: comprehension
+      question: What stack and project folder will you use, and what is the first visible feature?
+    hints:
+      - Use the stack and tasks already recorded in the HLD.
+      - Choose one small behavior a user can see and test.
+  - id: run-skeleton
+    title: Run the app skeleton
+    objective: skeleton
+    instructions: >
+      Use Files/app-skeleton-prompt.md. Have the learner run the documented local
+      command and show the app opening without a blocking error. Inspect the
+      actual files and run output. The runtime and command depend on the stack;
+      never execute an arbitrary command from course content. If a browser view
+      is needed, install and use Playwright when permitted by the CLI and
+      inspect the page. Record the observed result.
+    verification:
+      type: student_confirmation
+    hints:
+      - Find the run command in the project's own files or generated instructions.
+      - Check the terminal error before changing code or installing tools.
+  - id: build-visible-feature
+    title: Build and verify one MVP feature
+    objective: feature
+    instructions: >
+      Use Files/implementation-loop-prompt.md for one selected task. Let the
+      learner review each AI change, run the app, and test the feature in the
+      browser. Use Playwright if useful and permitted by the CLI. Ask the
+      learner to explain what was verified and what remains.
+    verification:
+      type: comprehension
+      question: Which visible behavior works now, and what observation proves it?
+    hints:
+      - Test the main user action and inspect the resulting state.
+      - If it fails, capture the exact error and use Files/debugging-prompt.md.
+  - id: commit-first-build
+    title: Commit the verified first build
+    objective: record
+    instructions: >
+      Have the learner review git diff and commit the skeleton and first feature.
+      Verify a commit created since Week 5 started. Explain the Week 5 homework:
+      implement remaining MVP tasks in small checked steps, then push.
+    verification:
+      type: git_history
+      minimum_commits: 1
+    hints:
+      - Run git status and inspect the diff before staging.
+      - Commit only the files needed for the verified feature.

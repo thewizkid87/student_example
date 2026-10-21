@@ -1,0 +1,16 @@
+id: week-08
+title: Deployment and Presentation
+duration_minutes: 120
+prerequisites: [week-07]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: prepare
+    description: Confirm release readiness and identify build settings from the app
+  - id: deploy
+    description: Deploy the selected project from GitHub to Netlify
+  - id: verify
+    description: Test the live URL and core user flow
+  - id: present
+    description: Present the project, feedback, limitations, and next steps

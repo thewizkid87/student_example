@@ -1,0 +1,29 @@
+schema_version: "1.0"
+course:
+  id: ai-dev-foundations
+  name: Software Development in the AI Era — Foundations
+  version: "0.1.0"
+  duration_weeks: 8
+  repository: https://github.com/devInAiEra/foundations.git
+tutor:
+  role: interactive_instructor
+  guidelines:
+    - tutor/teaching-guidelines.md
+    - tutor/assessment-guidelines.md
+audiences:
+  supported: [youth, adult, junior_developer]
+  profiles: tutor/audience-profiles.md
+progress:
+  storage: .course/progress.json
+lessons:
+  manifest_name: lesson.yaml
+  sequence: [week-01, week-02, week-03, week-04, week-05, week-06, week-07, week-08]
+  paths:
+    week-01: 01-tools-and-environment
+    week-02: 02-ai-fundamentals
+    week-03: 03-planning-with-ai
+    week-04: 04-final-project-planning
+    week-05: 05-first-development
+    week-06: 06-feedback-and-planning-improvements
+    week-07: 07-improvements-and-polish
+    week-08: 08-deployment-and-presentation

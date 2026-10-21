@@ -1,0 +1,18 @@
+id: week-05
+title: First Development
+duration_minutes: 120
+prerequisites: [week-04]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: prepare
+    description: Choose a stack and a first task from the final project plan
+  - id: skeleton
+    description: Start a runnable app skeleton
+  - id: feature
+    description: Build, inspect, and verify one visible MVP feature
+  - id: record
+    description: Commit verified changes and plan the remaining MVP homework

@@ -1,0 +1,62 @@
+activities:
+  - id: capture-feedback
+    title: Capture anonymized feedback
+    objective: feedback
+    instructions: >
+      Run the MVP and invite another person to try one realistic task, or use
+      teacher-guided/self-review if a tester is unavailable. Use
+      Files/feedback-capture-cheatsheet.md. Record actions, pauses, expectations,
+      and failures without address, phone, email, or other personal details;
+      use labels such as Tester A. Do not invent a tester or observation.
+    verification:
+      type: student_confirmation
+    hints:
+      - Ask the tester to accomplish one goal without coaching each click.
+      - Record what happened, not just whether they liked it.
+  - id: prioritize-feedback
+    title: Decide what to improve
+    objective: decisions
+    instructions: >
+      Use Files/feedback-categorization-prompt.md and Files/prioritization-prompt.md.
+      Ask the learner to accept, defer, reject, or investigate each item and
+      explain why it matters to the target user and version 1 scope.
+    verification:
+      type: comprehension
+      question: Which feedback item will you address first, and why?
+    hints:
+      - Compare severity, frequency, and effect on the main flow.
+      - Keep new feature requests separate from fixes to the MVP.
+  - id: review-feedback-plan
+    title: Review the feedback plan
+    objective: plan
+    instructions: >
+      Use Files/feedback-plan-prompt.md. Inspect feedback-plan.md for anonymized
+      observations, decisions, selected changes, and deferred ideas. Check it
+      against actual observations; remove contact information before a public push.
+    verification:
+      type: artifact_review
+      path: feedback-plan.md
+      rubric:
+        - Distinguishes observations from interpretations
+        - Explains accepted and deferred decisions
+        - Contains no tester contact information
+    hints:
+      - Include a short reason for each decision.
+      - Label feedback sources without identifying personal details.
+  - id: review-improvement-tasks
+    title: Review improvement tasks
+    objective: plan
+    instructions: >
+      Use Files/improvement-tasks-prompt.md. Inspect the selected
+      <idea>-improvement-tasks.md and ensure its prefix matches the project.
+      Tasks should be small and have verification steps for Week 7.
+    verification:
+      type: artifact_review
+      path_glob: '*-improvement-tasks.md'
+      rubric:
+        - Matches selected project and feedback-plan.md
+        - Prioritizes a small set of changes
+        - Gives an observable check for each task
+    hints:
+      - Break a broad usability concern into one observable change.
+      - Keep future ideas visible but outside selected work.

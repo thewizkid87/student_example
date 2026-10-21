@@ -1,0 +1,23 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: observations
+  description: Record three AI strengths, three weaknesses, and a surprising behavior.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: challenge
+  description: Document a grounded and a wrong or unsupported answer, including challenge
+    prompts.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: validation
+  description: Explain how each claim was independently checked and what changed.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

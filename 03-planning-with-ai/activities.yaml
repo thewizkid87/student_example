@@ -1,0 +1,79 @@
+activities:
+  - id: choose-idea
+    title: Choose a practice project idea
+    objective: idea
+    instructions: >
+      Use Files/project-idea-examples.md and Files/user-problem-cheatsheet.md.
+      Ask the learner for a target user, real problem, and possible solution.
+      This in-class idea need not be the final homework choice.
+    verification:
+      type: comprehension
+      question: Who is the user, what problem do they face, and why might your idea help?
+    hints:
+      - Start with one person and one concrete task that frustrates them.
+      - Describe the problem before listing features.
+  - id: review-summary
+    title: Create and critique the idea summary
+    objective: summary
+    instructions: >
+      Use Files/summary-stage-prompt.md. Guide a conversation, then have the
+      learner review the created <idea>-summary.md. Identify the chosen prefix
+      and use it consistently for the MVP and tasks; review the matching file.
+    verification:
+      type: artifact_review
+      path_glob: '*-summary.md'
+      rubric:
+        - Names the target user and problem
+        - Explains the proposed solution without assuming unsupported facts
+        - Learner has reviewed and corrected the draft
+    hints:
+      - Ask who will use it and what they need to accomplish.
+      - Read the file for vague phrases before continuing.
+  - id: review-mvp
+    title: Define the MVP and future scope
+    objective: mvp
+    instructions: >
+      Use Files/mvp-stage-prompt.md and the same idea prefix as the reviewed
+      summary. Help the learner choose a small version 1 and defer extras.
+      Inspect the matching <idea>-mvp.md, not an unrelated idea file. Explain
+      that Week 8 uses Netlify; check whether this stack can deploy there or
+      record a concrete teacher-approved deployment route before proceeding.
+    verification:
+      type: artifact_review
+      path_glob: '*-mvp.md'
+      rubric:
+        - Matches the selected summary prefix
+        - Separates version 1 from later features
+        - Records risks and an appropriate stack choice
+        - Identifies a credible Week 8 deployment route
+    hints:
+      - What is the smallest useful workflow a user can finish?
+      - Move attractive but nonessential features to a later version.
+  - id: review-tasks
+    title: Create buildable tasks
+    objective: tasks
+    instructions: >
+      Use Files/tasks-stage-prompt.md and the selected summary and MVP.
+      Review <idea>-tasks.md for order, size, and a way to verify each task.
+    verification:
+      type: artifact_review
+      path_glob: '*-tasks.md'
+      rubric:
+        - Matches the chosen idea prefix and MVP
+        - Tasks are ordered and small enough to implement
+        - Each task includes an observable completion check
+    hints:
+      - Break a large feature into one visible change at a time.
+      - Ask how you would know each task works.
+  - id: plan-three-ideas
+    title: Plan the three-idea homework
+    objective: homework
+    instructions: >
+      Open Homework/project.md. Explain that homework includes three summaries,
+      a selected idea, and matching MVP and task files. Ask the learner how they
+      will record the selected idea for Week 4; do not choose for them.
+    verification:
+      type: comprehension
+      question: Which three summaries are required, and what files carry the selected idea into Week 4?
+    hints:
+      - Read the homework acceptance criteria and submission section.

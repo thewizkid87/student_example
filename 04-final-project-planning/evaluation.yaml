@@ -1,0 +1,29 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: hld
+  description: Document the project problem, users, data, screens, architecture, milestones,
+    and risks.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: scope
+  description: Keep the chosen project small enough for one week and explain browser
+    storage and backend needs.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: final-tasks
+  description: Write outcome-based final tasks with acceptance criteria and a first
+    app-skeleton task.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: critique
+  description: Show a specific revision made after AI critique.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

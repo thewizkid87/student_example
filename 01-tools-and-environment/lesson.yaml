@@ -1,0 +1,20 @@
+id: week-01
+title: Tools and Environment
+duration_minutes: 120
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+homework_artifacts: [about-me.md]
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: tool-map
+    description: Explain the roles of Git, GitHub, Markdown, editor, terminal and AI CLI
+  - id: setup
+    description: Confirm working tools and accounts
+  - id: repository
+    description: Work in a student copy of the course template
+  - id: first-file
+    description: Create and commit a Markdown repository tour
+  - id: homework-workflow
+    description: Understand the independent homework task

@@ -1,0 +1,56 @@
+activities:
+  - id: check-release
+    title: Check release readiness
+    objective: prepare
+    instructions: >
+      Use Files/deployment-checklist.md. Inspect the selected app, README.md,
+      release-notes.md, and GitHub state. Ask the learner to identify the build
+      command and publish directory from actual project files using
+      Files/netlify-build-settings-prompt.md. Static projects may need no build.
+    verification:
+      type: comprehension
+      question: What exact build command and publish directory does this project need, and what files support that answer?
+    hints:
+      - Read package scripts, build configuration, and actual output folders.
+      - A plain static site may publish its source folder without a build step.
+  - id: deploy-netlify
+    title: Deploy from GitHub with Netlify
+    objective: deploy
+    instructions: >
+      Guide the learner through Files/netlify-deploy-guide.md. Have them select
+      their own repository and enter the verified settings. Never ask for
+      credentials. If deployment fails, inspect the relevant log and use
+      Files/deployment-debugging-prompt.md. Record the resulting public URL.
+    verification:
+      type: student_confirmation
+    hints:
+      - Confirm the GitHub repository and branch are the intended ones.
+      - Read the failing build-log line before changing settings.
+  - id: test-live-flow
+    title: Verify the deployed app
+    objective: verify
+    instructions: >
+      Open the actual public URL and test the main user flow. Use Playwright
+      if needed and permitted, or guide a manual browser check. Do not treat
+      a successful Netlify build as proof the app works. If an API is present,
+      consider Files/health-check-endpoint-prompt.md only when relevant.
+      Keep the URL with the learner's final notes or README.
+    verification:
+      type: comprehension
+      question: What live URL did you test, which main action did you perform, and what happened?
+    hints:
+      - Open the public URL in a fresh browser tab.
+      - Try the main action and inspect its visible result.
+  - id: present-project
+    title: Present the project
+    objective: present
+    instructions: >
+      Ask the learner to walk through the target user, problem, main feature,
+      deployed URL, feedback-driven change, known limitation, and future idea.
+      Give concrete feedback and let the learner present in their own words.
+    verification:
+      type: comprehension
+      question: Who is this for, what does it do, what changed after feedback, and what would you improve next?
+    hints:
+      - Begin with the user and their problem, then show the live main flow.
+      - Finish with one limitation and one realistic next step.

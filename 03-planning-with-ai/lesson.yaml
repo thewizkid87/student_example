@@ -1,0 +1,21 @@
+id: week-03
+title: Planning With AI
+duration_minutes: 120
+prerequisites: [week-02]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+homework_artifacts: [idea-1-summary.md, idea-2-summary.md, idea-3-summary.md, 'idea-*-mvp.md', 'idea-*-tasks.md']
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: idea
+    description: Identify a user, problem, and possible solution
+  - id: summary
+    description: Create and critique a project summary
+  - id: mvp
+    description: Separate a buildable MVP from future features
+  - id: tasks
+    description: Write verifiable development tasks
+  - id: homework
+    description: Understand the three-idea homework and chosen project handoff

@@ -1,0 +1,50 @@
+activities:
+  - id: validate-selected-idea
+    title: Validate the selected project
+    objective: validate
+    instructions: >
+      Inspect the Week 3 selected <idea>-summary.md, <idea>-mvp.md, and
+      <idea>-tasks.md with the learner. Use Files/idea-validation-prompt.md.
+      If a file is missing, help them finish that prerequisite before continuing.
+      Ask the learner to decide whether scope is ready, too large, or underspecified.
+    verification:
+      type: comprehension
+      question: What is the version 1 scope, and what evidence shows it is buildable?
+    hints:
+      - Check the target user, main flow, screens or states, data, and time.
+      - Reduce scope when the first build has too many independent features.
+  - id: review-hld
+    title: Review the high-level design
+    objective: architecture
+    instructions: >
+      Use Files/project-hld-prompt.md to create or revise project-hld.md.
+      Compare it with the same selected Week 3 files and review each section.
+      Do not accept a design that silently changes the learner's objectives.
+    verification:
+      type: artifact_review
+      path: project-hld.md
+      rubric:
+        - Describes final version 1 scope and main user flow
+        - Includes screens or states, data or storage, architecture, and risks
+        - Matches the selected Week 3 idea and learner decisions
+        - Describes a feasible deployment path for the selected stack
+    hints:
+      - Describe what the user sees, what is stored, and where each part runs.
+      - Record assumptions and boundaries before generating tasks.
+  - id: review-final-tasks
+    title: Review the final task list
+    objective: final-tasks
+    instructions: >
+      Use Files/tasks-final-prompt.md after the HLD is reviewed. Inspect the
+      selected <idea>-tasks-final.md and compare it with project-hld.md and
+      Files/task-writing-cheatsheet.md. Use the same idea prefix as Week 3.
+    verification:
+      type: artifact_review
+      path_glob: '*-tasks-final.md'
+      rubric:
+        - Matches selected idea and project-hld.md
+        - Orders work from app skeleton through core flow and verification
+        - Each task has a clear result and check
+    hints:
+      - Start with a runnable skeleton, then one user-visible feature.
+      - Split tasks that require several independent outcomes.

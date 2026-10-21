@@ -1,0 +1,22 @@
+schema_version: '1.0'
+assignment: homework
+objectives:
+- id: profile
+  description: Introduce yourself, why you joined, and one thing you want to build.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: markdown
+  description: Write a personal Markdown profile in about-me.md.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+- id: privacy
+  description: Remove private contact details and secrets before publishing.
+  evidence:
+  - Committed homework artifacts, relevant source, and Git history as available
+guidance:
+- Assess only evidence supplied from the reviewed commit.
+- Use the course audience profile and give constructive next steps.
+- Mark tool use, GitHub push, live app behavior, and account setup unclear unless
+  directly observed.
+- Do not ask the learner to disclose personal contact information.
+max_suggestions: 3

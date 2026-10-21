@@ -1,0 +1,19 @@
+id: week-02
+title: AI Fundamentals
+duration_minutes: 120
+prerequisites: [week-01]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+homework_artifacts: [week2-ai-observations.md]
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: model-basics
+    description: Explain what a language model does and when its answers need checking
+  - id: critical-use
+    description: Recognize hallucinations, missing context, and useful follow-up questions
+  - id: challenge
+    description: Challenge an AI answer and document what changed
+  - id: homework
+    description: Plan the independent observations homework

@@ -1,0 +1,77 @@
+activities:
+  - id: choose-improvement
+    title: Choose a selected improvement
+    objective: improve
+    instructions: >
+      Open feedback-plan.md and the selected <idea>-improvement-tasks.md.
+      Choose one incomplete, small task. Ask the learner what behavior should
+      change and how they will test it. Do not expand the scope silently.
+    verification:
+      type: comprehension
+      question: Which improvement did you choose and what test will show it works?
+    hints:
+      - Choose a task already selected in feedback-plan.md.
+      - Describe the user-visible before and after behavior.
+  - id: verify-improvement
+    title: Implement and verify the improvement
+    objective: improve
+    instructions: >
+      Use Files/improvement-loop-prompt.md for only the chosen task. Run the app
+      and test the changed behavior, using Playwright when helpful and available.
+      Inspect the result before marking the task complete in the file. Have the
+      learner review and commit the verified change. Ask for the specific test
+      result, not a vague claim that the app works.
+    verification:
+      type: comprehension
+      question: What changed, what test did you run, and what result did you observe?
+    hints:
+      - Reproduce the original problem, then test the changed flow.
+      - Check a failure or empty state as well as the happy path.
+  - id: review-readme
+    title: Review project README
+    objective: document
+    instructions: >
+      Use Files/readme-update-prompt.md. The template already has README.md;
+      inspect its actual contents and require accurate project description,
+      features, local run command, and limitations. A preexisting file alone
+      is insufficient evidence.
+    verification:
+      type: artifact_review
+      path: README.md
+      rubric:
+        - Describes the learner's actual app and target user
+        - Gives tested local run instructions
+        - Separates current features from limitations or future work
+    hints:
+      - Copy the command that really started the app.
+      - Replace template text with project-specific information.
+  - id: review-release-notes
+    title: Review release notes
+    objective: document
+    instructions: >
+      Use Files/release-notes-prompt.md. Have the learner record verified
+      improvements, feedback addressed, and remaining limitations. Inspect
+      release-notes.md and compare claims with observed work.
+    verification:
+      type: artifact_review
+      path: release-notes.md
+      rubric:
+        - Describes changes that were actually implemented and verified
+        - Connects changes to feedback without exposing tester details
+        - Distinguishes known limits and future ideas
+    hints:
+      - List what changed and why, then what remains.
+      - Remove claims about untested or deferred features.
+  - id: prepare-deployment
+    title: Prepare the deployment handoff
+    objective: readiness
+    instructions: >
+      Read Homework/project.md and Files/netlify-account-setup.md. The learner
+      will finish selected improvements, push the work, and create a Netlify
+      account. Confirm they understand that deployment occurs in Week 8.
+      Never request credentials in chat.
+    verification:
+      type: comprehension
+      question: What must be ready by Week 8, and what will you verify before pushing?
+    hints:
+      - Check improvements, README, release notes, local app, and GitHub push.

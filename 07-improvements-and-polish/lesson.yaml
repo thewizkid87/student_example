@@ -1,0 +1,17 @@
+id: week-07
+title: Improvements and Polish
+duration_minutes: 120
+prerequisites: [week-06]
+content: Lesson/lesson_plan.md
+activities: activities.yaml
+homework: Homework/project.md
+homework_evaluation: evaluation.yaml
+homework_artifacts: [README.md, release-notes.md, 'idea-*-improvement-tasks.md']
+enrichment: Enrichment/enrichment.md
+objectives:
+  - id: improve
+    description: Implement and verify a selected feedback-driven improvement
+  - id: document
+    description: Update project instructions and release notes
+  - id: readiness
+    description: Prepare for deployment without deploying yet
